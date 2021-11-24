@@ -1,0 +1,55 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@600&display=swap');
+
+*{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+hr{
+    width:50%;
+    border-top: 1px solid white;
+}
+#intro{
+    text-align: center;
+
+    color: white;
+}
+
+.usernameTable{
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #25252a;
+}
+
+.form_usernames, .form_keyword, .tweetCountList{
+    /* width: 415px; */
+    margin: auto;
+    color: white;
+    text-align: center;
+}
+
+.customInsert{
+    width: 200px;
+    height: 50px;
+    color: white;
+    margin-top: 30px;
+    text-align:center;
+}
+
+.customBack{
+    width: 200px;
+    height: 50px;
+    color: white;
+    margin-top: 15px;
+    margin-left: 5px;
+    text-align:center;
+}
+.customQuery{
+    width: 200px;
+    height: 50px;
+    color: white;
+    margin-top: 15px;
+    margin-left: 5px;
+    text-align:center;
+}

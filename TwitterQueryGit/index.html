@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Curb your Twitter Query</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+<body style="background-color:#25252A;">
+    <div id="intro">
+        <h1>Query your Twitter feed</h1>
+
+        <h5> Streaming tweets into a MySQL DB to query has never been easier! </h5>
+        <br>
+        
+    </div>
+    <form action="insert.php" method="POST">
+        <div class="form-group form_usernames col-md-4" >
+            <label for="UsernamesInput">Enter usernames separated by comma and no space<br> (taylorswift13,elonmusk,...): </label>
+            <textarea class="form-control" name="UsernamesInput" id="UsernamesInput" rows="3"></textarea>
+        </div>
+        <br>
+        <div class="form-group tweetCountList col-md-4">
+            <label for="tweetCountSelect">Select number of most recent tweets to pull from a single user</label>
+            <select multiple class="form-control" name="tweetCountSelect" id="tweetCountSelect">
+            <option>20 tweets</option>
+            <option>50 tweets</option>
+            <option>100 tweets</option>
+            <option>200 tweets</option>
+            </select>
+        </div>
+        <div class="col-md-12 text-center">
+            <!-- <a class="btn btn-primary btn-lg customInsert" href="insert.php" role="button">INSERT</a> -->
+            <input class="btn btn-primary btn-lg customInsert" type="submit" value="INSERT">
+        </div>
+    </form>
+    <!-- <div class="col-md-12 text-center">
+        <a class="btn btn-primary btn-lg custom2" href="query.html" role="button">QUERY</a>
+    </div> -->
+    
+
+</body>
+</html>
